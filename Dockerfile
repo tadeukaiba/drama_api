@@ -1,6 +1,14 @@
 # Usar uma imagem base do Python
 FROM python:3.11.6-slim
 
+# Instalar bibliotecas e ferramentas de desenvolvimento necessárias
+RUN apt-get update && apt-get install -y \
+    gcc \
+    libxml2-dev \
+    libxslt-dev \
+    zlib1g-dev \
+    && rm -rf /var/lib/apt/lists/*
+
 # Definir o diretório de trabalho dentro do contêiner
 WORKDIR /usr/src/app
 
