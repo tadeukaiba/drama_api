@@ -1,1 +1,1 @@
-MYDRAMALIST_WEBSITE = "https://mydramalist.com/"  # MyDramaList.com
+MYDRAMALIST_WEBSITE = "https://br.mydramalist.com/"  # MyDramaList.com
